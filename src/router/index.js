@@ -7,12 +7,18 @@ import AddressEdit from '../views/AddressEdit.vue'
 import Detail from '../views/Detail.vue'
 import Success from '../views/Success.vue'
 import Info from '../views/Info.vue'
+import Calculate from '../views/Calculate.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
-  {
+    {
     path: '/',
+    name: 'Calculate',
+    component: Calculate
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },
